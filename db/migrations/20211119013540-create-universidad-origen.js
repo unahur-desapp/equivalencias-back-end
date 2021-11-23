@@ -1,16 +1,14 @@
 'use strict';
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('universidad_origens', {
+    await queryInterface.createTable('Universidad_origen', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      id_universidad: {
-        type: Sequelize.INTEGER,
-      },
+
       id_equivalencia: {
         type: Sequelize.INTEGER,
       },
@@ -34,6 +32,6 @@ module.exports = {
     });
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('universidad_origens');
+    await queryInterface.dropTable('Universidad_origen');
   },
 };

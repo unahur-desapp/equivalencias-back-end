@@ -1,26 +1,18 @@
 'use strict';
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('equivalencia', {
+    await queryInterface.createTable('Equivalencia', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      id_equivalencia: {
-        type: Sequelize.INTEGER,
-      },
-      dni_usuario: {
-        type: Sequelize.INTEGER,
-      },
-      datos_universidad: {
+
+      nombre_universidad: {
         type: Sequelize.STRING,
       },
       nombre_carrera: {
-        type: Sequelize.STRING,
-      },
-      nombre_materia: {
         type: Sequelize.STRING,
       },
       instituto: {
@@ -37,6 +29,6 @@ module.exports = {
     });
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('equivalencia');
+    await queryInterface.dropTable('Equivalencia');
   },
 };
