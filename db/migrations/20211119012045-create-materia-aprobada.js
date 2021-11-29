@@ -9,9 +9,6 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
-      id_equivalencia: {
-        type: Sequelize.INTEGER,
-      },
       nota: {
         type: Sequelize.INTEGER,
       },

@@ -9,9 +9,10 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
-      id_equivalencia: {
+      codigo: {
         type: Sequelize.INTEGER,
       },
+
       nombre: {
         type: Sequelize.STRING,
       },
