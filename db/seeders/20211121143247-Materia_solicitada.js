@@ -33,7 +33,7 @@ module.exports = {
     const matsolicitada4 = materia4[0].id;
 
     const materia5 = await queryInterface.sequelize.query(
-      `SELECT id FROM "Equivalencia" WHERE id_equivalencia = '11' `,
+      `SELECT id FROM "Equivalencia" WHERE id_equivalencia = '12' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
@@ -74,8 +74,8 @@ module.exports = {
       },
 
       {
-        nombre: 'Objetos 1',
-        carrera: 'Licenciatura en informatica',
+        nombre: 'Metalurgia l',
+        carrera: 'Tec. en Metalurgica',
         EquivalenciumId: matsolicitada5,
         createdAt: new Date(),
         updatedAt: new Date(),

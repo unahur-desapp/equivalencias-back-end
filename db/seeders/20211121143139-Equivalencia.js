@@ -69,7 +69,7 @@ module.exports = {
       {
         id_equivalencia: 12,
         //  nombre_universidad: 'Universidad Nacional de Hurlingham',
-        nombre_carrera: 'Tecnicatura en Informatica',
+        nombre_carrera: 'Tecnicatura en Metalurgica',
         instituto: 'ninguno',
         UsuarioId: dniUsuario3,
         createdAt: new Date(),
