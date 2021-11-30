@@ -12,9 +12,9 @@ module.exports = {
       id_equivalencia: {
         type: Sequelize.INTEGER,
       },
-      nombre_universidad: {
+      /* nombre_universidad: {
         type: Sequelize.STRING,
-      },
+      }, */
       nombre_carrera: {
         type: Sequelize.STRING,
       },

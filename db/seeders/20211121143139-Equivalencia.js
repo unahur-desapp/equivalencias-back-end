@@ -49,7 +49,7 @@ module.exports = {
     await queryInterface.bulkInsert('Equivalencia', [
       {
         id_equivalencia: 10,
-        nombre_universidad: 'Universidad Nacional de Hurlingham',
+        // nombre_universidad: 'Universidad Nacional de Hurlingham',
         nombre_carrera: 'Profesorado Universitario de Ingles',
         instituto: 'ninguno',
         UsuarioId: dniUsuario,
@@ -58,7 +58,7 @@ module.exports = {
       },
       {
         id_equivalencia: 11,
-        nombre_universidad: 'Universidad Nacional de Hurlingham',
+        //  nombre_universidad: 'Universidad Nacional de Hurlingham',
         nombre_carrera: 'Tecnicatura en Informatica',
         instituto: 'ninguno',
         UsuarioId: dniUsuario2,
@@ -68,7 +68,7 @@ module.exports = {
 
       {
         id_equivalencia: 12,
-        nombre_universidad: 'Universidad Nacional de Hurlingham',
+        //  nombre_universidad: 'Universidad Nacional de Hurlingham',
         nombre_carrera: 'Tecnicatura en Informatica',
         instituto: 'ninguno',
         UsuarioId: dniUsuario3,
@@ -78,7 +78,7 @@ module.exports = {
 
       {
         id_equivalencia: 14,
-        nombre_universidad: 'Universidad Nacional de Hurlingham',
+        //  nombre_universidad: 'Universidad Nacional de Hurlingham',
         nombre_carrera: 'Lic. de Biotecnologia',
         instituto: 'ninguno',
         UsuarioId: dniUsuario4,
@@ -87,7 +87,7 @@ module.exports = {
       },
       {
         id_equivalencia: 15,
-        nombre_universidad: 'Universidad Nacional de Hurlingham',
+        //  nombre_universidad: 'Universidad Nacional de Hurlingham',
         nombre_carrera: 'Licen. de Educacion',
         instituto: 'ninguno',
         UsuarioId: dniUsuario5,
