@@ -8,16 +8,16 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-
+      /*
       id_equivalencia: {
         type: Sequelize.INTEGER,
       },
-      /* nombre_universidad: {
+       nombre_universidad: {
         type: Sequelize.STRING,
-      }, */
+      }, 
       nombre_carrera: {
         type: Sequelize.STRING,
-      },
+      },*/
       instituto: {
         type: Sequelize.STRING,
       },

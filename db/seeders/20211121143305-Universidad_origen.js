@@ -5,7 +5,7 @@ module.exports = {
     await queryInterface.bulkInsert('Universidad_origen', [
       {
         codigo: 20,
-        nombre: 'Universidad Tecnológica Nacional',
+        nombre_universidad: 'Universidad Tecnológica Nacional',
         localidad: 'Haedo',
         sigla: 'UTN',
         createdAt: new Date(),
@@ -14,7 +14,7 @@ module.exports = {
 
       {
         codigo: 21,
-        nombre: 'Universidad de Buenos Aires',
+        nombre_universidad: 'Universidad de Buenos Aires',
         localidad: 'CABA',
         sigla: 'UBA',
         createdAt: new Date(),
@@ -22,7 +22,7 @@ module.exports = {
       },
       {
         codigo: 22,
-        nombre: 'Universidad de la Matanza',
+        nombre_universidad: 'Universidad de la Matanza',
         localidad: 'San Justo',
         sigla: 'UNLaM',
         createdAt: new Date(),
@@ -31,7 +31,7 @@ module.exports = {
 
       {
         codigo: 23,
-        nombre: 'Universidad Nacional de San Martin',
+        nombre_universidad: 'Universidad Nacional de San Martin',
         localidad: 'San Martin',
         sigla: 'UNSAM',
         createdAt: new Date(),
@@ -40,7 +40,7 @@ module.exports = {
 
       {
         codigo: 24,
-        nombre: 'Universidad Nacional de La Plata',
+        nombre_universidad: 'Universidad Nacional de La Plata',
         localidad: 'San Martin',
         sigla: 'UNLP',
         createdAt: new Date(),
@@ -49,7 +49,7 @@ module.exports = {
 
       {
         codigo: 25,
-        nombre: 'Universidad de Buenos Aires',
+        nombre_universidad: 'Universidad de Buenos Aires',
         localidad: 'CABA',
         sigla: 'UBA',
         createdAt: new Date(),
@@ -58,7 +58,7 @@ module.exports = {
 
       {
         codigo: 26,
-        nombre: 'Universidad de Morón',
+        nombre_universidad: 'Universidad de Morón',
         localidad: 'Moron',
         sigla: 'UM',
         createdAt: new Date(),

@@ -13,7 +13,7 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
-      nombre: {
+      nombre_universidad: {
         type: Sequelize.STRING,
       },
       localidad: {

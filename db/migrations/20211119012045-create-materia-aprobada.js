@@ -21,6 +21,10 @@ module.exports = {
       nombre_materia: {
         type: Sequelize.STRING,
       },
+
+      certificado: {
+        type: Sequelize.BOOLEAN,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,

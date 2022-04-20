@@ -87,7 +87,7 @@ module.exports = {
         discord: '@laAraña',
         telefono: 1123968889,
         rol: 'alumno',
-        password: '',
+        password: '1525gty',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
