@@ -16,7 +16,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         // a que otra tabla referencia (porque es una FK)
         references: {
-          model: 'Usuarios',
+          model: 'Usuario',
           key: 'id',
         },
         // que pasa cuando se modifica o borra el id de producto, con la FK

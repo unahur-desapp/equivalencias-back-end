@@ -7,90 +7,80 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     const product1Data = await queryInterface.sequelize.query(
-      `SELECT id FROM "Usuarios" WHERE dni = '30563652' `,
+      //`SELECT id FROM "Usuario" WHERE dni = '30563652' `,
+      `SELECT id FROM "Usuario" WHERE id = '1' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
     );
-    const dniUsuario = product1Data[0].id;
+    const usuario1 = product1Data[0].id;
 
     const product2Data = await queryInterface.sequelize.query(
-      `SELECT id FROM "Usuarios" WHERE dni = '35025698' `,
+      //`SELECT id FROM "Usuarios" WHERE dni = '35025698' `,
+      `SELECT id FROM "Usuario" WHERE id = '3' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
     );
-    const dniUsuario2 = product2Data[0].id;
+    const usuario2 = product2Data[0].id;
 
     const product3Data = await queryInterface.sequelize.query(
-      `SELECT id FROM "Usuarios" WHERE dni = '35563675' `,
+      // `SELECT id FROM "Usuarios" WHERE dni = '35563675' `,
+      `SELECT id FROM "Usuario" WHERE id = '4' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
     );
-    const dniUsuario3 = product3Data[0].id;
+    const usuario3 = product3Data[0].id;
 
     const product4Data = await queryInterface.sequelize.query(
-      `SELECT id FROM "Usuarios" WHERE dni = '35563652' `,
+      //`SELECT id FROM "Usuarios" WHERE dni = '35563652' `,
+      `SELECT id FROM "Usuario" WHERE id = '5' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
     );
-    const dniUsuario4 = product4Data[0].id;
+    const usuario4 = product4Data[0].id;
 
     const product5Data = await queryInterface.sequelize.query(
-      `SELECT id FROM "Usuarios" WHERE dni = '29025755' `,
+      //`SELECT id FROM "Usuarios" WHERE dni = '29025755' `,
+      `SELECT id FROM "Usuario" WHERE id = '6' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
     );
-    const dniUsuario5 = product5Data[0].id;
+    const usuario5 = product5Data[0].id;
 
     await queryInterface.bulkInsert('Equivalencia', [
       {
-        //id_equivalencia: 10,
-        //nombre_universidad: 'Universidad Nacional de Hurlingham',
-        //nombre_carrera: 'Profesorado Universitario de Ingles',
         instituto: 'ninguno',
-        UsuarioId: dniUsuario,
+        UsuarioId: usuario1,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        //id_equivalencia: 11,
-        //nombre_universidad: 'Universidad Nacional de Hurlingham',
-        //nombre_carrera: 'Tecnicatura en Informatica',
         instituto: 'ninguno',
-        UsuarioId: dniUsuario2,
+        UsuarioId: usuario2,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
 
       {
-        //id_equivalencia: 12,
-        // nombre_universidad: 'Universidad Nacional de Hurlingham',
-        // nombre_carrera: 'Tecnicatura en Metalurgica',
         instituto: 'ninguno',
-        UsuarioId: dniUsuario3,
+        UsuarioId: usuario3,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
 
       {
-        //id_equivalencia: 14,
-        //nombre_universidad: 'Universidad Nacional de Hurlingham',
-        //nombre_carrera: 'Lic. de Biotecnologia',
         instituto: 'ninguno',
-        UsuarioId: dniUsuario4,
+        UsuarioId: usuario4,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        //id_equivalencia: 15,
-        //nombre_universidad: 'Universidad Nacional de Hurlingham',
-        //nombre_carrera: 'Licen. de Educacion',
         instituto: 'ninguno',
-        UsuarioId: dniUsuario5,
+        UsuarioId: usuario5,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
