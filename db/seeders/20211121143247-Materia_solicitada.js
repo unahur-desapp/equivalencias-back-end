@@ -29,7 +29,7 @@ module.exports = {
 
     const materia4 = await queryInterface.sequelize.query(
       //`SELECT id FROM "Equivalencia" WHERE id_equivalencia = '15' `,
-      `SELECT id FROM "Equivalencia" WHERE id = '5' `,
+      `SELECT id FROM "Equivalencia" WHERE id = '4' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
@@ -38,7 +38,7 @@ module.exports = {
 
     const materia5 = await queryInterface.sequelize.query(
       //`SELECT id FROM "Equivalencia" WHERE id_equivalencia = '12' `,
-      `SELECT id FROM "Equivalencia" WHERE id = '4' `,
+      `SELECT id FROM "Equivalencia" WHERE id = '5' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
