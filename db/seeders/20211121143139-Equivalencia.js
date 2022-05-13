@@ -55,12 +55,16 @@ module.exports = {
       {
         instituto: 'ninguno',
         UsuarioId: usuario1,
+        estado: 'aceptado',
+        observaciones: 'falta analitico',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
         instituto: 'ninguno',
         UsuarioId: usuario2,
+        estado: 'aceptado',
+        observaciones: 'falta dni',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -68,6 +72,8 @@ module.exports = {
       {
         instituto: 'ninguno',
         UsuarioId: usuario3,
+        estado: 'rechazado',
+        observaciones: 'falta analitico',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -75,12 +81,16 @@ module.exports = {
       {
         instituto: 'ninguno',
         UsuarioId: usuario4,
+        estado: 'pendiente',
+        observaciones: 'falta analitico',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
         instituto: 'ninguno',
         UsuarioId: usuario5,
+        estado: 'aceptado',
+        observaciones: 'no hay observaciones',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
