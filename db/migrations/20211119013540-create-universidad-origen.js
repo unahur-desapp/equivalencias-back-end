@@ -9,10 +9,6 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
-      codigo: {
-        type: Sequelize.INTEGER,
-      },
-
       nombre_universidad: {
         type: Sequelize.STRING,
       },
