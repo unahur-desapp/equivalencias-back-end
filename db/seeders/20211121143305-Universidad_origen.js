@@ -4,7 +4,6 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.bulkInsert('Universidad_origen', [
       {
-        codigo: 20,
         nombre_universidad: 'Universidad Tecnológica Nacional',
         localidad: 'Haedo',
         sigla: 'UTN',
@@ -13,7 +12,6 @@ module.exports = {
       },
 
       {
-        codigo: 21,
         nombre_universidad: 'Universidad de Buenos Aires',
         localidad: 'CABA',
         sigla: 'UBA',
@@ -21,7 +19,6 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        codigo: 22,
         nombre_universidad: 'Universidad de la Matanza',
         localidad: 'San Justo',
         sigla: 'UNLaM',
@@ -30,7 +27,6 @@ module.exports = {
       },
 
       {
-        codigo: 23,
         nombre_universidad: 'Universidad Nacional de San Martin',
         localidad: 'San Martin',
         sigla: 'UNSAM',
@@ -39,7 +35,6 @@ module.exports = {
       },
 
       {
-        codigo: 24,
         nombre_universidad: 'Universidad Nacional de La Plata',
         localidad: 'San Martin',
         sigla: 'UNLP',
@@ -48,7 +43,6 @@ module.exports = {
       },
 
       {
-        codigo: 25,
         nombre_universidad: 'Universidad de Buenos Aires',
         localidad: 'CABA',
         sigla: 'UBA',
@@ -57,7 +51,6 @@ module.exports = {
       },
 
       {
-        codigo: 26,
         nombre_universidad: 'Universidad de Morón',
         localidad: 'Moron',
         sigla: 'UM',

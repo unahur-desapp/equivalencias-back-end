@@ -8,7 +8,7 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     const product1Data = await queryInterface.sequelize.query(
       //`SELECT id FROM "Usuario" WHERE dni = '30563652' `,
-      `SELECT id FROM "Usuario" WHERE id = '1' `,
+      `SELECT id FROM "Usuarios" WHERE id = '1' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
@@ -17,7 +17,7 @@ module.exports = {
 
     const product2Data = await queryInterface.sequelize.query(
       //`SELECT id FROM "Usuarios" WHERE dni = '35025698' `,
-      `SELECT id FROM "Usuario" WHERE id = '3' `,
+      `SELECT id FROM "Usuarios" WHERE id = '3' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
@@ -26,7 +26,7 @@ module.exports = {
 
     const product3Data = await queryInterface.sequelize.query(
       // `SELECT id FROM "Usuarios" WHERE dni = '35563675' `,
-      `SELECT id FROM "Usuario" WHERE id = '4' `,
+      `SELECT id FROM "Usuarios" WHERE id = '4' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
@@ -35,7 +35,7 @@ module.exports = {
 
     const product4Data = await queryInterface.sequelize.query(
       //`SELECT id FROM "Usuarios" WHERE dni = '35563652' `,
-      `SELECT id FROM "Usuario" WHERE id = '5' `,
+      `SELECT id FROM "Usuarios" WHERE id = '5' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
@@ -44,7 +44,7 @@ module.exports = {
 
     const product5Data = await queryInterface.sequelize.query(
       //`SELECT id FROM "Usuarios" WHERE dni = '29025755' `,
-      `SELECT id FROM "Usuario" WHERE id = '6' `,
+      `SELECT id FROM "Usuarios" WHERE id = '6' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
@@ -55,12 +55,16 @@ module.exports = {
       {
         instituto: 'ninguno',
         UsuarioId: usuario1,
+        estado: 'aceptado',
+        observaciones: 'falta analitico',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
         instituto: 'ninguno',
         UsuarioId: usuario2,
+        estado: 'aceptado',
+        observaciones: 'falta dni',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -68,6 +72,8 @@ module.exports = {
       {
         instituto: 'ninguno',
         UsuarioId: usuario3,
+        estado: 'rechazado',
+        observaciones: 'falta analitico',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -75,12 +81,16 @@ module.exports = {
       {
         instituto: 'ninguno',
         UsuarioId: usuario4,
+        estado: 'pendiente',
+        observaciones: 'falta analitico',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
         instituto: 'ninguno',
         UsuarioId: usuario5,
+        estado: 'aceptado',
+        observaciones: 'no hay observaciones',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
