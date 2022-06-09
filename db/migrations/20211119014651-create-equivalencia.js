@@ -10,14 +10,17 @@ module.exports = {
       },
 
       instituto: {
+        allowNull: false,
         type: Sequelize.STRING,
       },
 
       estado: {
+        allowNull: false,
         type: Sequelize.STRING,
       },
 
       observaciones: {
+        allowNull: false,
         type: Sequelize.STRING,
       },
 

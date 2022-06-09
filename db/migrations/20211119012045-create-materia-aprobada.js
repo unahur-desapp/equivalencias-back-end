@@ -10,19 +10,24 @@ module.exports = {
       },
 
       nota: {
+        allowNull: false,
         type: Sequelize.INTEGER,
       },
       carga_horaria: {
+        allowNull: false,
         type: Sequelize.INTEGER,
       },
       año_aprobacion: {
+        allowNull: false,
         type: Sequelize.DATE,
       },
       nombre_materia: {
+        allowNull: false,
         type: Sequelize.STRING,
       },
 
       certificado: {
+        allowNull: false,
         type: Sequelize.BOOLEAN,
       },
       createdAt: {

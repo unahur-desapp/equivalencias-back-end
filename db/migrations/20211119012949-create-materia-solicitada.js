@@ -10,9 +10,11 @@ module.exports = {
       },
 
       nombre: {
+        allowNull: false,
         type: Sequelize.STRING,
       },
       carrera: {
+        allowNull: false,
         type: Sequelize.STRING,
       },
       createdAt: {

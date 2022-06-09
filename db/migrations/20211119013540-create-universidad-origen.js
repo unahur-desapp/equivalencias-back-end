@@ -10,12 +10,15 @@ module.exports = {
       },
 
       nombre_universidad: {
+        allowNull: false,
         type: Sequelize.STRING,
       },
       localidad: {
+        allowNull: false,
         type: Sequelize.STRING,
       },
       sigla: {
+        allowNull: false,
         type: Sequelize.STRING,
       },
       createdAt: {
