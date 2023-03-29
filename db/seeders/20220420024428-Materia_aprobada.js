@@ -105,7 +105,7 @@ module.exports = {
       {
         nota: 7,
         carga_horaria: 8,
-        año_aprobacion: '10-03-2015',
+        año_aprobacion: '20151003',
         nombre_materia: 'Gramática I',
         certificado: true,
         EquivalenciumId: equi1,
@@ -118,7 +118,7 @@ module.exports = {
       {
         nota: 9,
         carga_horaria: 8,
-        año_aprobacion: '10-03-2015',
+        año_aprobacion: '20151003',
         nombre_materia: 'Programacion 1',
         certificado: true,
         EquivalenciumId: equi2,
@@ -131,7 +131,7 @@ module.exports = {
       {
         nota: 7,
         carga_horaria: 6,
-        año_aprobacion: '25-11-2020',
+        año_aprobacion: '20201125',
         nombre_materia: 'Quimica General',
         certificado: false,
         EquivalenciumId: equi3,
@@ -144,7 +144,7 @@ module.exports = {
       {
         nota: 8,
         carga_horaria: 8,
-        año_aprobacion: '20-11-2019',
+        año_aprobacion: '20191120',
         nombre_materia: 'Pedagogía I',
         certificado: false,
         EquivalenciumId: equi4,
@@ -156,7 +156,7 @@ module.exports = {
       {
         nota: 9,
         carga_horaria: 8,
-        año_aprobacion: '9-12-2018',
+        año_aprobacion: '20181209',
         nombre_materia: 'Programación con Objetos I',
         certificado: true,
         EquivalenciumId: equi5,
