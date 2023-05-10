@@ -64,6 +64,30 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date(),
       },
+      {
+        nombre_universidad: 'Instituto tecnologico de Buenos Aires',
+        localidad: 'CABA',
+        sigla: 'ITBA',
+        disabled: false,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        nombre_universidad: 'Universidad del Salvador',
+        localidad: 'CABA',
+        sigla: 'USL',
+        disabled: false,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        nombre_universidad: 'Instituto Don torcuato di tella',
+        localidad: 'CABA',
+        sigla: 'ITDT',
+        disabled: false,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
     ]);
   },
 
