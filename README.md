@@ -79,7 +79,7 @@ SQL_DATABASE=equivalencias
 NODEMAILER_USER='equivalenciasunahuruniversidad@gmail.com'
 NODEMAILER_PASSWORD='nzpd frgy frih gylc'
 
-SQL_TEST_DATABASE=equivalencias
+SQL_TEST_DATABASE=equivalencias_test
 
 ```
 
