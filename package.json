@@ -6,10 +6,9 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development nodemon ",
     "start:test": "cross-env NODE_ENV=test nodemon ",
-    "start:test2": "cross-env NODE_ENV=test2 nodemon",
     "build": "run-s clean transpile",
     "server": "node ./dist/bin/www",
-    "dev": "cross-env NODE_ENV=development run-s build server",
+    "dev": "run-s build server",
     "prod": "run-s transpile db:init && run-s db:seed && run-s server",
     "clean": "rimraf dist",
     "db:init": "run-s transpile db:migrate",
