@@ -10,7 +10,7 @@
     "server": "node ./dist/bin/www",
     "dev": "run-s build server",
     "prod": "run-s transpile db:init && run-s db:seed && run-s server",
-    "clean": "rimraf dist",
+    "clean": "rm -rf dist",
     "db:init": "run-s transpile db:migrate",
     "db:migrate": "sequelize db:migrate",
     "db:seed": "sequelize db:seed",
