@@ -57,9 +57,13 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.development
 
 # next.js build output
 .next
 
 # Docker
 docker/postgres/data
+
+#Configuracion local de base de datos
+.env.development

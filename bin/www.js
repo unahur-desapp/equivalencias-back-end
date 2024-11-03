@@ -17,6 +17,25 @@ const debug = debugPkg('js/www:server');
 
 const server = http.createServer(app);
 
+const io = require('socket.io')(server, {
+  cors: {
+    origin: '*',
+  },
+});
+
+io.on('connection', (socket) => {
+  console.log('a user connected');
+
+  socket.on('disconnect', () => {
+    console.log('user disconnected');
+  });
+
+  socket.on('message', (msg) => {
+    console.log('message: ' + msg);
+    io.emit('message', msg);
+  });
+});
+
 /**
  * Listen on the port set on the app, on all network interfaces.
  */
@@ -27,7 +46,7 @@ if (!port) {
 
 // Run sequelize before listen
 db.sequelize.authenticate().then(() => {
-  app.listen(port, () => {
+  server.listen(port, () => {
     console.log(`¡Aplicación iniciada! ====> 🌎 http://localhost:${port}`);
   });
 });

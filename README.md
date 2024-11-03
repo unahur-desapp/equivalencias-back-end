@@ -1,3 +1,120 @@
+# Proyecto EQUIVALENCIAS - version 2.0 \_ 2023-09-26
+
+> Este repositorio es un fork de un proyecto para la materia PPS [Practica Profesional Supervisada] Link: (https://github.com/DesApp-2023c1-Grupo-2/PPS-2023c2-Gurpo2-equiv-back).
+> El original es uno repositorio [Materia desarrollo de aplicaciones] (https://github.com/unahur-desapp/equivalencias-back-end).
+>
+> A continuación, como se distribuyen los directorios.
+
+```shell
+.
+├── bin                 # Punto de entrada del servidor
+├── db
+│   ├── migrations      # Migraciones de la base de datos
+│   └── seeders         # Datos de prueba para la base de datos
+├── fileserver
+│   └── archivos
+├── docker              # Configuración de Docker para desarrollo
+├── lib
+│   ├── config          # Configuración de la base de datos
+│   ├── controllers     # Acciones de nuestra aplicación
+│   ├── models          # Definición de modelos, atributos, etc
+│   └── routes          # Rutas de la API
+└── test                # Utilidades para escribir tests
+|_ .env.development     # archivo de configuracion: usuario, contraseña y base de datos,
+                        # configuracion de usuario y contraseña (token app), de la cuenta de Gmail que usa el sistema.
+```
+
+> - Software y librerias utilizadas
+
+> - [NodeJS](https://nodejs.org/es/): entorno de ejecución para JavaScript. Version 14.x.x
+> - [ExpressJS](https://expressjs.com/): framework para crear aplicaciones web.
+> - [Sequelize](https://sequelize.org/master/): ORM (object-relational mapping) para interactuar con una base SQL desde objetos JavaScript.
+> - [PostgreSQL](https://www.postgresql.org/): base de datos SQL. Version 14.x
+
+## Configuración inicial del proyecto
+
+Asumiendo que se instalaron los software y librerias, ejecutar para iniciar por primera vez y que puedas trabajar en el proyecto:
+
+# 1.- Hacerse del proyecto
+
+```shell
+# Descargar inicialmente el proyecto desde el repo de Github. Tener instalado Git:
+
+git clone https://github.com/DesApp-2023c1-Grupo-2/PPS-2023c2-Gurpo2-equiv-back.git
+
+# a efecto de una proba inicial, utilizaremos el branch probado: sprint3-back-dev
+```
+
+# 2.- Crear la base de datos.
+
+```shell
+# Teniendo postgres instalado, uilizando la ejecucion de consola:
+sudo -u usuario psql # donde "usuario" debe ser el creado para administrador postgres
+```
+
+```shell
+# iniciada la consola en postgres, ejecutar:
+CREATE DATABASE equivalencia;
+```
+
+# 3.- Configurar entorno
+
+```shell
+# definir las variables de entorno necesarias para acceder a las bases de datos y envio de mails.
+nano .env.development
+```
+
+# Confirmar los siguientes datos
+
+```shell
+# Donde la USERNAME es el usuario de postgres y PASSWORD es la clave de acceso que tiene ese usuario. Esto debe actualizarse con los datos que tengan configurado en su servidor.
+# DATABASE, es la base de datos creada anteriormente.
+# NODEMAILER_USER, es la cuenta de email desde donde se envian los correos de avisos del sistema.
+# NODEMAILER_PASSWORD. es el token de la cuenta Google, que se genero para que pueda conectar lña aplicacion.
+
+SQL_USERNAME=postgres
+SQL_PASSWORD=P4$$w0rD
+SQL_DATABASE=equivalencias
+
+NODEMAILER_USER='equivalenciasunahuruniversidad@gmail.com'
+NODEMAILER_PASSWORD='nzpd frgy frih gylc'
+
+SQL_TEST_DATABASE=equivalencias_test
+
+```
+
+# Instalar las dependencias Node del proyecto.
+
+```shell
+npm install
+```
+
+```shell
+# instalacion de dependencias complementarias.
+npm install fs path
+npm install multer
+npm install bcryptjs
+npm install crypto-browserify
+```
+
+# Ejecuta las migraciones iniciales para las bases de dev.
+
+```shell
+# Creacion de tablas y campos mediante relaciones.
+npm run db:init
+```
+
+# De manera opcional, también podés cargar unos datos de pruebas.
+
+```shell
+# (Opcional) Carga los datos de prueba en la base de desarrollo.
+npm run db:seed
+```
+
+# Documentacion anterior:
+
+# ******\*\*\*\*******\*\*\*\*******\*\*\*\*******\*\*\*******\*\*\*\*******\*\*\*\*******\*\*\*\*******
+
 # Repositorio semilla: API NodeJS :seedling:
 
 > Este repositorio es un fork de [otro que está en la organización surprograma](https://github.com/surprograma/nodejs-api-seed).  
@@ -85,6 +202,8 @@ Breve descripción de qué se puede encontrar en cada uno de los directorios del
 │   ├── models          # Definición de modelos, atributos, etc
 │   └── routes          # Rutas de la API
 └── test                # Utilidades para escribir tests
+|_ .env.development     # archivo de configuracion: usuario, contraseña y base de datos,
+                        # configuracion de usuario y contraseña (token app), de la cuenta de Gmail que usa el sistema.
 ```
 
 ## :woman_technologist: :man_technologist: Comandos útiles para el día a día

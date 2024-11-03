@@ -19,6 +19,10 @@ module.exports = {
         type: Sequelize.STRING,
       },
 
+      carrera: {
+        allowNull: false,
+        type: Sequelize.STRING,
+      },
       observaciones: {
         allowNull: false,
         type: Sequelize.STRING,
