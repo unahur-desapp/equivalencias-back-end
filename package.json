@@ -6,7 +6,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development nodemon ",
     "start:test": "cross-env NODE_ENV=test nodemon ",
-    "build": "npm cache clean --force && npm run clean && npm run transpile",
+    "build": "npm cache clean --force && npm install && npm run clean && npm run transpile",
     "server": "node ./dist/bin/www",
     "dev": "run-s build server",
     "prod": "run-s transpile db:init && run-s db:seed && run-s server",
