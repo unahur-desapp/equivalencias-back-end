@@ -85,15 +85,6 @@
   "optionalDependencies": {
     "pg-native": "^3.0.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
-  },
   "engines": {
     "node": "14.15.x"
   }
