@@ -21,7 +21,7 @@ module.exports = {
         },
         // que pasa cuando se modifica o borra el id de producto, con la FK
         onUpdate: 'CASCADE',
-        onDelete: '',
+        onDelete: 'CASCADE',
       }
     );
   },

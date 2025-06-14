@@ -63,3 +63,5 @@ typings/
 
 # Docker
 docker/postgres/data
+
+.vscode

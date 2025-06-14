@@ -15,6 +15,22 @@ module.exports = {
     );
     const usuario1 = product1Data[0].id;
 
+    const carrera_1 = await queryInterface.sequelize.query(
+      `SELECT id FROM "Carrera" WHERE nombre_carrera = 'Tecnicatura en informatica' `,
+      {
+        type: queryInterface.sequelize.QueryTypes.SELECT,
+      }
+    );
+    const carrera1 = carrera_1[0].id;
+
+    const carrera_2 = await queryInterface.sequelize.query(
+      `SELECT id FROM "Carrera" WHERE nombre_carrera = 'Profesorado de Ingles' `,
+      {
+        type: queryInterface.sequelize.QueryTypes.SELECT,
+      }
+    );
+    const carrera2 = carrera_2[0].id;
+
     const product2Data = await queryInterface.sequelize.query(
       //`SELECT id FROM "Usuarios" WHERE dni = '35025698' `,
       `SELECT id FROM "Usuarios" WHERE id = '3' `,
@@ -24,6 +40,14 @@ module.exports = {
     );
     const usuario2 = product2Data[0].id;
 
+    const carrera_3 = await queryInterface.sequelize.query(
+      `SELECT id FROM "Carrera" WHERE nombre_carrera = 'Lic. en Biotecnologia' `,
+      {
+        type: queryInterface.sequelize.QueryTypes.SELECT,
+      }
+    );
+    const carrera3 = carrera_3[0].id;
+
     const product3Data = await queryInterface.sequelize.query(
       // `SELECT id FROM "Usuarios" WHERE dni = '35563675' `,
       `SELECT id FROM "Usuarios" WHERE id = '4' `,
@@ -32,6 +56,14 @@ module.exports = {
       }
     );
     const usuario3 = product3Data[0].id;
+
+    const carrera_4 = await queryInterface.sequelize.query(
+      `SELECT id FROM "Carrera" WHERE nombre_carrera = 'Lic. en Educacion' `,
+      {
+        type: queryInterface.sequelize.QueryTypes.SELECT,
+      }
+    );
+    const carrera4 = carrera_4[0].id;
 
     const product4Data = await queryInterface.sequelize.query(
       //`SELECT id FROM "Usuarios" WHERE dni = '35563652' `,
@@ -51,12 +83,21 @@ module.exports = {
     );
     const usuario5 = product5Data[0].id;
 
+    const carrera_5 = await queryInterface.sequelize.query(
+      `SELECT id FROM "Carrera" WHERE nombre_carrera = 'Tec. en Metalurgica' `,
+      {
+        type: queryInterface.sequelize.QueryTypes.SELECT,
+      }
+    );
+    const carrera5 = carrera_5[0].id;
+
     await queryInterface.bulkInsert('Equivalencia', [
       {
         instituto: 'ninguno',
         UsuarioId: usuario1,
         estado: 'aceptado',
         observaciones: 'falta analitico',
+        CarreraId: carrera1,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -65,6 +106,7 @@ module.exports = {
         UsuarioId: usuario2,
         estado: 'aceptado',
         observaciones: 'falta dni',
+        CarreraId: carrera2,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -74,6 +116,7 @@ module.exports = {
         UsuarioId: usuario3,
         estado: 'rechazado',
         observaciones: 'falta analitico',
+        CarreraId: carrera3,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -83,6 +126,7 @@ module.exports = {
         UsuarioId: usuario4,
         estado: 'pendiente',
         observaciones: 'falta analitico',
+        CarreraId: carrera4,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -91,6 +135,7 @@ module.exports = {
         UsuarioId: usuario5,
         estado: 'aceptado',
         observaciones: 'no hay observaciones',
+        CarreraId: carrera5,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
